@@ -1,0 +1,14 @@
+policy_id,policy_name
+62505,Untrusted Messages
+85408,Suspicious Messages to E-Staff
+86908,Very Untrusted Messages
+62500,Rapid DMARC
+62498,[Ready to Enforce] Low Message Trust and Low Server Reputation
+62501,[Ready to Enforce] Brand Display Name Impostors
+85409,[Ready to Enforce] E-Staff Impostors
+86903,Internal | Malicious Attachments & URL's
+62507,Partner and Vendor Impostors
+86902,Outbound | Malicious Attachments & URL's
+62502,[Ready to Enforce] Look-alike Domains
+62499,Spoof of Partner Domains
+102831,Untrusted Splunk Support Messages
