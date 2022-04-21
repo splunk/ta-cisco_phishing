@@ -12,7 +12,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import
+
 import logging
 from datetime import datetime
 import sys
@@ -171,7 +171,7 @@ class CiscoPhishingInput(Script):
 
         try:
             # Go through each input for this modular input
-            for input_name, input_item in inputs.inputs.iteritems():
+            for input_name, input_item in inputs.inputs.items():
                 # Get fields from the InputDefinition object
                 client_id = input_item['client_id']
                 masked_secret = input_item['client_secret']
