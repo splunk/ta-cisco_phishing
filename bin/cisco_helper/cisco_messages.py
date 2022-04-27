@@ -9,6 +9,7 @@ class CiscoMessageProcessor:
         self._checkpoint = checkpoint
 
     def save_messages(self, messages, input_name, ew):
+        last_processed_time = None
         for message in messages:
             # Create an Event object, and set its fields
             ev = Event()
@@ -21,4 +22,5 @@ class CiscoMessageProcessor:
             last_processed_time = message['date']
 
         # save the checkpoint after each event is written to avoid duplication
-        self._checkpoint.update_checkpoint(last_processed_time)
+        if last_processed_time:
+            self._checkpoint.update_checkpoint(last_processed_time)
